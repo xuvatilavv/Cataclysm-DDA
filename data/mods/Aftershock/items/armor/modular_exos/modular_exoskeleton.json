@@ -43,7 +43,7 @@
         "ablative": true,
         "rigid": true,
         "max_contains_volume": "10 L",
-        "max_contains_weight": "45 kg",
+        "max_contains_weight": "80 kg",
         "flag_restriction": [ "EXO_TORSO_PLATE" ],
         "moves": 60
       },
@@ -73,9 +73,8 @@
         "description": "This is a mounting point for arm armor.",
         "ablative": true,
         "rigid": true,
-        "max_contains_volume": "8 L",
-        "max_contains_weight": "35 kg",
-        "max_item_length": "200 mm",
+        "max_contains_volume": "12 L",
+        "max_contains_weight": "80 kg",
         "flag_restriction": [ "EXO_ARM_PLATE" ],
         "moves": 60
       },
@@ -105,9 +104,8 @@
         "description": "This is a mounting point for leg armor.",
         "ablative": true,
         "rigid": true,
-        "max_contains_volume": "9 L",
-        "max_contains_weight": "40 kg",
-        "max_item_length": "200 mm",
+        "max_contains_volume": "12 L",
+        "max_contains_weight": "80 kg",
         "flag_restriction": [ "EXO_LEG_PLATE" ],
         "moves": 60
       },
@@ -142,17 +140,6 @@
     "ammo": "battery",
     "flags": [ "USE_UPS", "STURDY", "WATERPROOF", "ELECTRIC_IMMUNE", "COMBAT_TOGGLEABLE", "OUTER" ],
     "relic_data": { "passive_effects": [ { "has": "WORN", "condition": "ACTIVE", "values": [ { "value": "STRENGTH", "add": 10 } ] } ] },
-<<<<<<< HEAD
-
-    "use_action": [ {
-      "target": "modular_exoskeleton_on",
-      "msg": "The %s engages.",
-      "active": true,
-      "need_charges": 1,
-      "need_charges_msg": "The suit does not have enough charge.",
-      "type": "transform"
-    }, "MANAGE_EXOSUIT" ]
-=======
     "use_action": [
       {
         "target": "modular_exoskeleton_on",
@@ -164,7 +151,6 @@
       },
       "MANAGE_EXOSUIT"
     ]
->>>>>>> 81e89c11af (Linting)
   },
   {
     "id": "modular_exoskeleton_on",
@@ -179,8 +165,7 @@
     "power_draw": 7123,
     "revert_to": "modular_exoskeleton",
     "use_action": [
-      { "type": "transform", "menu_text": "Turn off", "msg": "The %s disengages.", "target": "modular_exoskeleton" },
-      "MANAGE_EXOSUIT"
+      { "type": "transform", "menu_text": "Turn off", "msg": "The %s disengages.", "target": "modular_exoskeleton" }
     ]
   },
   {
