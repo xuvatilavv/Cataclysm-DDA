@@ -1,0 +1,13 @@
+{
+  "ignorePatterns": [
+    {
+    "pattern": "^http.*"
+    }
+  ],
+  "replacementPatterns": [
+    {
+      "pattern": "^/",
+      "replacement": "{{BASEURL}}/"
+    }
+  ]
+}
